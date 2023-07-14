@@ -5,3 +5,5 @@ func getFactorial(_ n : Int) -> Int{
     }
     return factorial;
 }
+
+// print(getFactorial(5))
