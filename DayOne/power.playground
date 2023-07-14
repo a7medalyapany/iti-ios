@@ -1,0 +1,9 @@
+func clacPower(base x: Int, power y: Int) -> Int{
+    var result = 1;
+    for _ in 1...y{
+        result *= x;
+    }
+    return result;
+}
+
+// print(clacPower(base: 5, power: 8))
