@@ -1,0 +1,18 @@
+func sortArray(x : [Int]) -> [Int]{
+    var sortedArray = x;
+    let n = sortedArray.count;
+
+    for i in 1..<n{
+        let key = sortedArray[i];
+        var j = i - 1;
+        while j >= 0 && sortedArray[j] > key{
+            sortedArray[j + 1] = sortedArray[j];
+            j -= 1;
+        }
+        sortedArray[j + 1] = key;
+    }
+    return sortedArray;
+}
+
+// var arr = [2,8,0,5,2,10,1];
+// print(sortArray(x: arr));
