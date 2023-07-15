@@ -1,0 +1,30 @@
+class Person{
+    var salary : Int = 2000; 
+    func getSalary()->Int{
+        return self.salary;
+    }
+}
+
+// let obj : Person = Person();
+// print(obj.getSalary());
+
+class Manager : Person{
+    var bouns : Int = 500;
+    var deduction : Int = 150;
+    override func getSalary()->Int{
+        return salary + bouns - deduction;
+    }
+}
+
+// let obj1 : Manager = Manager();
+// print(obj1.getSalary());
+
+class Employee : Person{
+    var bouns : Int = 100;
+    override func getSalary()->Int{
+        return salary + bouns;
+    }
+}
+
+// let obj2 : Employee = Employee();
+// print(obj2.getSalary());
