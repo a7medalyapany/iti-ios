@@ -1,0 +1,49 @@
+// Movie struct
+struct Movie {
+    var title: String
+    var image: String
+    var rating: Float
+    var releaseYear: Int
+    var genre: [String]
+}
+
+let movies = [
+    Movie(title: "Inception", image: "inception.jpg", rating: 8.8, releaseYear: 2010, genre: ["Action", "Adventure", "Sci-Fi"]),
+    Movie(title: "The Departed", image: "the-departed.jpg", rating: 8.5, releaseYear: 2006, genre: ["Crime", "Drama", "Thriller"]),
+    Movie(title: "The Dark Knight", image: "the-dark-knight.jpg", rating: 9.0, releaseYear: 2008, genre: ["Action", "Crime", "Drama"]),
+    Movie(title: "Pulp Fiction", image: "pulp-fiction.jpg", rating: 8.9, releaseYear: 1994, genre: ["Crime", "Drama"]),
+    Movie(title: "The Shawshank Redemption", image: "shawshank-redemption.jpg", rating: 9.3, releaseYear: 1994, genre: ["Drama"])
+]
+
+for movie in movies {
+    print(movie.title)
+}
+
+//==============(using class)==============\\
+// class Movie {
+//     var title: String
+//     var image: String
+//     var rating: Float
+//     var releaseYear: Int
+//     var genre: [String]
+    
+//     init(title: String, image: String, rating: Float, releaseYear: Int, genre: [String]) {
+//         self.title = title
+//         self.image = image
+//         self.rating = rating
+//         self.releaseYear = releaseYear
+//         self.genre = genre
+//     }
+// }
+
+// let movies = [
+//     Movie(title: "Inception", image: "inception.jpg", rating: 8.8, releaseYear: 2010, genre: ["Action", "Adventure", "Sci-Fi"]),
+//     Movie(title: "The Departed", image: "the-departed.jpg", rating: 8.5, releaseYear: 2006, genre: ["Crime", "Drama", "Thriller"]),
+//     Movie(title: "The Dark Knight", image: "the-dark-knight.jpg", rating: 9.0, releaseYear: 2008, genre: ["Action", "Crime", "Drama"]),
+//     Movie(title: "Pulp Fiction", image: "pulp-fiction.jpg", rating: 8.9, releaseYear: 1994, genre: ["Crime", "Drama"]),
+//     Movie(title: "The Shawshank Redemption", image: "shawshank-redemption.jpg", rating: 9.3, releaseYear: 1994, genre: ["Drama"])
+// ]
+
+// for movie in movies {
+//     print(movie.title)
+// }
