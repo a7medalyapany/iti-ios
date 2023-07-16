@@ -1,0 +1,24 @@
+class calculator{
+    
+    func add(n1 x: Int, n2 y: Int) ->Int{
+        return x + y;
+    }
+    
+    func subtract(n1 x: Int, n2 y: Int) ->Int{
+        return x - y;
+    }
+    
+    func multiply(n1 x: Int, n2 y: Int) ->Int{
+        return x * y;
+    }
+    
+    func divide(n1 x: Float, n2 y: Float) ->Float{
+        return x / y;
+    }
+}
+
+// var obj = calculator();
+// print(obj.add(n1: 5,n2: 4));
+// print(obj.subtract(n1: 5,n2: 4));
+// print(obj.multiply(n1: 5,n2: 4));
+// print(obj.divide(n1: 5,n2: 4));
