@@ -1,0 +1,31 @@
+protocol MyProtocol{
+    func calcArea(width w: Double, height h: Double)-> Double;
+    func printShapeName();
+}
+
+class Rectangle: MyProtocol{
+    func calcArea(width w: Double, height h: Double)-> Double{
+        return w * h;
+    }
+    func printShapeName(){
+        print("Rectangle")
+    }
+}
+
+class Triangle: MyProtocol{
+    func calcArea(width b: Double, height h: Double)-> Double{
+        return (0.5*(b * h));
+    }
+    func printShapeName(){
+        print("Triangle")
+    }
+}
+
+// var obj1 = Rectangle();
+// var obj2 = Triangle();
+
+// obj1.printShapeName()
+// print("Area = \(obj1.calcArea(width: 4,height: 5))");
+
+// obj2.printShapeName()
+// print("Area = \(obj2.calcArea(width: 4,height: 5))");
