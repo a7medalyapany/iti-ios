@@ -1,0 +1,8 @@
+extension calculator{
+    func squaring(n x :Int)->Int{
+        return x * x;
+    }
+}
+
+// var obj = calculator();
+// print(obj.squaring(n: 3));
