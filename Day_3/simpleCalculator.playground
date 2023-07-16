@@ -12,13 +12,18 @@ class calculator{
         return x * y;
     }
     
-    func divide(n1 x: Float, n2 y: Float) ->Float{
+    func divide(n1 x: Float, n2 y: Float) ->Float?{
+        if y == 0{
+        print("can't divide by zero")
+        return nil;
+        }
         return x / y;
     }
 }
 
-// var obj = calculator();
-// print(obj.add(n1: 5,n2: 4));
-// print(obj.subtract(n1: 5,n2: 4));
-// print(obj.multiply(n1: 5,n2: 4));
-// print(obj.divide(n1: 5,n2: 4));
+//var obj = calculator();
+//print(obj.add(n1: 5,n2: 4));
+//print(obj.subtract(n1: 5,n2: 4));
+//print(obj.multiply(n1: 5,n2: 4));
+//if let result = obj.divide(n1: 5, n2: 4) {
+//    print(result)}
