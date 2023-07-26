@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3C88B37C2A70701700633944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88B37B2A70701700633944 /* AppDelegate.swift */; };
 		3C88B37E2A70701700633944 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88B37D2A70701700633944 /* SceneDelegate.swift */; };
-		3C88B3802A70701700633944 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88B37F2A70701700633944 /* ViewController.swift */; };
 		3C88B3832A70701700633944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C88B3812A70701700633944 /* Main.storyboard */; };
 		3C88B3852A70701A00633944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C88B3842A70701A00633944 /* Assets.xcassets */; };
 		3C88B3882A70701A00633944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C88B3862A70701A00633944 /* LaunchScreen.storyboard */; };
@@ -42,7 +41,6 @@
 		3C88B3782A70701700633944 /* Tabel View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tabel View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C88B37B2A70701700633944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C88B37D2A70701700633944 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3C88B37F2A70701700633944 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3C88B3822A70701700633944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C88B3842A70701A00633944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C88B3872A70701A00633944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 			children = (
 				3C88B37B2A70701700633944 /* AppDelegate.swift */,
 				3C88B37D2A70701700633944 /* SceneDelegate.swift */,
-				3C88B37F2A70701700633944 /* ViewController.swift */,
 				3C88B3812A70701700633944 /* Main.storyboard */,
 				3C88B3AF2A70767100633944 /* addUserVC.swift */,
 				3C88B3AD2A70735D00633944 /* mainScreenVC.swift */,
@@ -270,7 +267,6 @@
 				3C88B3AC2A70709300633944 /* User.swift in Sources */,
 				3C88B3B02A70767100633944 /* addUserVC.swift in Sources */,
 				3C88B3AE2A70735D00633944 /* mainScreenVC.swift in Sources */,
-				3C88B3802A70701700633944 /* ViewController.swift in Sources */,
 				3C88B37C2A70701700633944 /* AppDelegate.swift in Sources */,
 				3C88B37E2A70701700633944 /* SceneDelegate.swift in Sources */,
 			);

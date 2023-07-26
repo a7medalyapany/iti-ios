@@ -57,6 +57,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="xdc-8M-f7M">
                             <connections>
                                 <action selector="addButtonAction:" destination="MXE-4L-bLU" id="IT0-tb-t1A"/>
+                                <segue destination="MOX-36-x4g" kind="show" id="6l0-PF-NP0"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -116,6 +117,7 @@
                         <viewLayoutGuide key="safeArea" id="hoP-g6-VqH"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="K8Q-Et-coV"/>
                     <connections>
                         <outlet property="ageF" destination="xBH-UZ-YA2" id="QBc-mO-Hvy"/>
                         <outlet property="emailF" destination="hLz-Vj-ZoB" id="cKO-tK-s6V"/>

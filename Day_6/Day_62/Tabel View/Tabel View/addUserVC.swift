@@ -30,7 +30,11 @@ class addUserVC: UIViewController {
     }
 
     @IBAction func saveButton(_ sender: Any) {
-        addUserDelegate?.didAddUser(user.name: )
+        guard let name = nameF.text, let email = emailF.text, let phone = phoneF.text, let age = ageF.text else{
+            return
+        }
+        let newUser = User(name: name, email: email, phone: phone, age: age)
+        addUserDelegate?.didAddUser(newUser)
         navigationController?.popViewController(animated: true)
     }
 }
