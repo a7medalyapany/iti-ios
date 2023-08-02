@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="location" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsD-CM-17c">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <gestureRecognizers/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="h54-gp-hhC" appends="YES" id="S2l-5K-8md"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeW-ow-WcE">
+                                <rect key="frame" x="178" y="729" width="60" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="toSecondScreen"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                                <connections>
+                                    <action selector="nextBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JG9-sA-THt"/>
+                                    <segue destination="yNd-cL-Np1" kind="presentation" identifier="toSecondScreen" id="cP9-CS-wYj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bsD-CM-17c" secondAttribute="trailing" id="4Ap-JX-PiA"/>
+                            <constraint firstAttribute="bottom" secondItem="bsD-CM-17c" secondAttribute="bottom" id="5eR-bK-BAN"/>
+                            <constraint firstItem="bsD-CM-17c" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6Q7-QE-erO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bsD-CM-17c" secondAttribute="bottom" id="92o-si-vN4"/>
+                            <constraint firstItem="bsD-CM-17c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QJa-tN-5li"/>
+                            <constraint firstItem="bsD-CM-17c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cGR-XS-Enq"/>
+                            <constraint firstAttribute="trailing" secondItem="bsD-CM-17c" secondAttribute="trailing" id="eVq-Ow-vPf"/>
+                            <constraint firstItem="bsD-CM-17c" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hfA-Ox-WUQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="bsD-CM-17c" id="lep-nW-Pz8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="h54-gp-hhC">
+                    <connections>
+                        <action selector="mapTouched:" destination="BYZ-38-t0r" id="7i6-WA-LGm"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="131" y="-27"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="zFC-6f-clC">
+            <objects>
+                <viewController storyboardIdentifier="scndScreen" id="yNd-cL-Np1" customClass="SecondViewController" customModule="location" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZQc-v5-Ghm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqa-gN-IUq">
+                                <rect key="frame" x="20" y="0.0" width="374" height="886"/>
+                                <gestureRecognizers/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vji-9N-KZy" appends="YES" id="dNg-UU-f6F"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9eK-bM-DXj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kqa-gN-IUq" firstAttribute="top" secondItem="ZQc-v5-Ghm" secondAttribute="topMargin" id="0Xw-8L-jqB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kqa-gN-IUq" secondAttribute="trailing" id="1BP-ns-VLK"/>
+                            <constraint firstItem="kqa-gN-IUq" firstAttribute="trailing" secondItem="ZQc-v5-Ghm" secondAttribute="trailingMargin" id="60T-2S-92Q"/>
+                            <constraint firstItem="kqa-gN-IUq" firstAttribute="leading" secondItem="ZQc-v5-Ghm" secondAttribute="leadingMargin" id="N3C-PZ-lyV"/>
+                            <constraint firstItem="kqa-gN-IUq" firstAttribute="top" secondItem="ZQc-v5-Ghm" secondAttribute="topMargin" id="Urb-xo-yF1"/>
+                            <constraint firstItem="kqa-gN-IUq" firstAttribute="leading" secondItem="ZQc-v5-Ghm" secondAttribute="leadingMargin" id="dda-IB-B3T"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="kqa-gN-IUq" secondAttribute="bottom" id="w92-Mb-b4A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="kqa-gN-IUq" id="Tee-sS-OfE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="drV-9f-UEO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vji-9N-KZy">
+                    <connections>
+                        <action selector="touched:" destination="yNd-cL-Np1" id="29l-br-UIo"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="991" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

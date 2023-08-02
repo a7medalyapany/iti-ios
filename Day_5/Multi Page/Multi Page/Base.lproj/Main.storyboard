@@ -54,7 +54,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="send:" destination="BYZ-38-t0r" eventType="touchUpInside" id="deP-hh-Js0"/>
-                                    <segue destination="aOx-wN-Vtj" kind="show" id="7mi-Rn-2tA"/>
                                 </connections>
                             </button>
                         </subviews>
